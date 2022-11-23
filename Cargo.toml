@@ -7,3 +7,7 @@ edition = "2021"
 
 [dependencies]
 yew = "0.19"
+stylist = { features = [
+    "yew_integration",
+    "yew_use_style",
+] }
