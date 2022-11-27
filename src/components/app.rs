@@ -1,13 +1,12 @@
 use super::counter::Counter;
 use yew::prelude::*;
-use stylist::yew::{styled_component};
 
 #[derive(Properties, PartialEq)]
 pub struct ContentProps {
     pub children: Children,
 }
 
-#[styled_component(Content)]
+#[function_component(Content)]
 fn content(props: &ContentProps) -> Html {
     html! {
         <div id="content">
@@ -16,7 +15,7 @@ fn content(props: &ContentProps) -> Html {
     }
 }
 
-#[styled_component(App)]
+#[function_component(App)]
 pub fn app() -> Html {
   html! {
     <div id="app">

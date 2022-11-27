@@ -1,6 +1,4 @@
 use yew::prelude::*;
-use stylist::{css, style};
-use stylist::yew::{styled_component};
 
 #[derive(Properties, PartialEq)]
 pub struct CounterButtonProps {
@@ -8,7 +6,7 @@ pub struct CounterButtonProps {
     pub label: String
 }
 
-#[styled_component(CounterButton)]
+#[function_component(CounterButton)]
 fn counter_button(props: &CounterButtonProps) -> Html {
     html! {
       <button
@@ -20,7 +18,7 @@ fn counter_button(props: &CounterButtonProps) -> Html {
     }
 }
 
-#[styled_component(Counter)]
+#[function_component(Counter)]
 pub fn counter() -> Html {
   let counter = use_state(|| 0);
 
