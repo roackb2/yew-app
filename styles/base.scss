@@ -1,0 +1,23 @@
+$orange: #FFB067;
+$yellow: #FFED86;
+$blue: #A2DCE7;
+$pink: #F8CCDC;
+$text: #303757;
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin button {
+  border-radius: 4px;
+  background-color: $orange;
+  font-size: 14px;
+  color: white;
+  padding: 10px 20px;
+}

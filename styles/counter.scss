@@ -1,0 +1,16 @@
+@import './base.scss';
+
+.counter {
+  @include col;
+  align-items: center;
+  &-actions {
+    @include row;
+    gap: 20px;
+  }
+  &-btn {
+    @include button;
+  }
+  &-num {
+    color: $text;
+  }
+}
